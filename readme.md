@@ -15,6 +15,7 @@ I am building this as an educational tool. My learning goals for this project ar
 It is currently deployed on AWS. The latest deployment can be seen [here](http://rgftestdeploy.us-east-2.elasticbeanstalk.com/). 
 
 ## Design
+Design uses a non-scaffolded MVC, treating the web forms as Views.
 ![System Architecture](https://i.imgur.com/xIb7a8W.png)
 
 
