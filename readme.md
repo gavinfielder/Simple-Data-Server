@@ -16,7 +16,7 @@ It is currently deployed on AWS. The latest deployment can be seen [here](http:/
 
 ## Design
 Design uses a non-scaffolded MVC, treating the web forms as Views.
-![System Architecture](https://i.imgur.com/xIb7a8W.png)
+![System Architecture](https://i.imgur.com/Ez8OBXj.png)
 
 
 Last updated 7/31/2018
