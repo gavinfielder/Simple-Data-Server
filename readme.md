@@ -9,7 +9,13 @@ I am building this as an educational tool. My learning goals for this project ar
  - WCF (potentially)
  - Deployment on AWS using EC2, Elastic Beanstalk, and AWS toolkit for Visual Studio
 
+
+
 ## Current Deployment
 It is currently deployed on AWS. The latest deployment can be seen [here](http://rgftestdeploy.us-east-2.elasticbeanstalk.com/). 
+
+## Design
+![System Architecture](https://i.imgur.com/xIb7a8W.png)
+
 
 Last updated 7/31/2018
