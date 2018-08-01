@@ -55,6 +55,7 @@
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/ViewData">View Data</a></li>
                         <li><a runat="server" href="~/SendData">Send Data</a></li>
+                        <li><a runat="server" href="~/ViewLog">View Log</a></li>
                     </ul>
                 </div>
             </div>
