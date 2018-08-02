@@ -1,0 +1,7 @@
+C:\Users\gavin\source\repos\testDeploy\DataService\bin\DataService.dll.config
+C:\Users\gavin\source\repos\testDeploy\DataService\bin\DataService.dll
+C:\Users\gavin\source\repos\testDeploy\DataService\bin\DataService.pdb
+C:\Users\gavin\source\repos\testDeploy\DataService\obj\Debug\DataService.csprojResolveAssemblyReference.cache
+C:\Users\gavin\source\repos\testDeploy\DataService\obj\Debug\DataService.csproj.CoreCompileInputs.cache
+C:\Users\gavin\source\repos\testDeploy\DataService\obj\Debug\DataService.dll
+C:\Users\gavin\source\repos\testDeploy\DataService\obj\Debug\DataService.pdb

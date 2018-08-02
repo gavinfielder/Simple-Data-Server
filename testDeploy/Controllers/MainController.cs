@@ -1,13 +1,14 @@
 ﻿using System.Collections.Generic;
 using testDeploy.Models;
-using testDeploy.DataDefinitions;
+//using testDeploy.DataDefinitions;
+using testDeploy.ServiceReference1;
 
 namespace testDeploy.Controllers
 {
     public class MainController
     {
         //Fields
-        private static IDataService data = new ramOnlyStorage();
+        private static testDeploy.Models.IDataService data = new TextDataService();
         private static ILogManager logManager = new TextLogManager("C:\\inetpub\\wwwroot\\App_Data\\log.txt");
 
         //Uses the data service object to record the requested data

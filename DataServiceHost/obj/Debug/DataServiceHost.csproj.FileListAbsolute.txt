@@ -1,0 +1,11 @@
+C:\Users\gavin\source\repos\testDeploy\DataServiceHost\bin\Debug\DataServiceHost.exe.config
+C:\Users\gavin\source\repos\testDeploy\DataServiceHost\bin\Debug\DataServiceHost.exe
+C:\Users\gavin\source\repos\testDeploy\DataServiceHost\bin\Debug\DataServiceHost.pdb
+C:\Users\gavin\source\repos\testDeploy\DataServiceHost\bin\Debug\DataService.dll
+C:\Users\gavin\source\repos\testDeploy\DataServiceHost\bin\Debug\DataService.pdb
+C:\Users\gavin\source\repos\testDeploy\DataServiceHost\bin\Debug\DataService.dll.config
+C:\Users\gavin\source\repos\testDeploy\DataServiceHost\obj\Debug\DataServiceHost.csprojResolveAssemblyReference.cache
+C:\Users\gavin\source\repos\testDeploy\DataServiceHost\obj\Debug\DataServiceHost.csproj.CoreCompileInputs.cache
+C:\Users\gavin\source\repos\testDeploy\DataServiceHost\obj\Debug\DataServiceHost.csproj.CopyComplete
+C:\Users\gavin\source\repos\testDeploy\DataServiceHost\obj\Debug\DataServiceHost.exe
+C:\Users\gavin\source\repos\testDeploy\DataServiceHost\obj\Debug\DataServiceHost.pdb
