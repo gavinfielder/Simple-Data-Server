@@ -11,20 +11,28 @@ namespace testDeploy
 {
     public partial class ViewData : System.Web.UI.Page
     {
+        //Fields
+        TableRow headers;
+
         //Executes on page load
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Initialize table headers
+            headers = new TableRow();
+            TableCell idCell, valueCell, timestampCell;
+            idCell = new TableCell();
+            idCell.Text = "ID";
+            valueCell = new TableCell();
+            valueCell.Text = "Value";
+            timestampCell = new TableCell();
+            timestampCell.Text = "Timestamp";
+            headers.Cells.Add(idCell);
+            headers.Cells.Add(valueCell);
+            headers.Cells.Add(timestampCell);
+            //Populate Table
             RefreshTable();
         }
-
-        /*
-        //TODO: This was intended to avoid memory leaks, but it seems it runs when the server releases the memory, meaning
-        //that it unsubscribes right after subscribing
-        protected void Page_Unload(object sender, EventArgs e)
-        {
-            MainController.Unsubscribe(this);
-        }
-        */
+        
 
         //Processes a refresh button click event
         protected void RefreshDataButtonClick(object sender, EventArgs e)
@@ -39,15 +47,18 @@ namespace testDeploy
             List<Record> records = MainController.RetrieveAllRecords();
             TableRow row;
             TableCell idCell, valueCell, timestampCell;
-            foreach (Record r in records)
+            //Add headers
+            DataTable.Rows.Add(headers);
+            //Add data
+            for (int i = records.Count - 1; i >= 0; i--)
             {
                 row = new TableRow();
                 idCell = new TableCell();
-                idCell.Text = r.id;
+                idCell.Text = records[i].id;
                 valueCell = new TableCell();
-                valueCell.Text = r.value.ToString();
+                valueCell.Text = records[i].value.ToString();
                 timestampCell = new TableCell();
-                timestampCell.Text = r.dateTime.ToString();
+                timestampCell.Text = records[i].dateTime.ToString();
                 row.Cells.Add(idCell);
                 row.Cells.Add(valueCell);
                 row.Cells.Add(timestampCell);

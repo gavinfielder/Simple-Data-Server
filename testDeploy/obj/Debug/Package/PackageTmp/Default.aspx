@@ -7,8 +7,8 @@
     
     <p>I am building this as an educational tool. My learning goals for this project are:</p>
     <ul><li>ASP.Net</li>
-        <li>Real-time updates using SignalR (coming soon)</li>
-        <li>Microsoft SQL Server (coming soon)</li>
+        <li>SignalR (coming soon)</li>
+        <li>SQL Server (coming soon)</li>
         <li>WCF (potentially coming soon)</li>
         <li>Deployment on AWS using EC2, Elastic Beanstalk, and AWS toolkit for Visual Studio</li>
     </ul>
@@ -19,15 +19,6 @@
     <p>To start, you can send data using the <a runat="server" href="~/SendData">Send Data</a> page. You can view existing records with the <a runat="server" href="~/ViewData">View Data</a> page.</p>
     <h2>Current System</h2>
     <ul><li>Current data model: RAM only (data is not persistent). WIP</li></ul>
-
-
-
-
-
-
-
-
-
 
 
 
