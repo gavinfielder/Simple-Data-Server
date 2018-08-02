@@ -250,6 +250,7 @@
     </Compile>
     <Compile Include="Models\DataDefinitions.cs" />
     <Compile Include="Models\IDataService.cs" />
+    <Compile Include="Models\Observer.cs" />
     <Compile Include="Models\ramOnlyStorage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SendData.aspx.cs">
