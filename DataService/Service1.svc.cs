@@ -34,13 +34,18 @@ namespace DataService
             Console.WriteLine("Done collecting records, now assigning to data contract.");
             dc.Records = records;
             Console.WriteLine("Finished getting records. Retrieved " + dc.Records.Count + " records. Returning now.");
+            fin.Close();
+            Console.WriteLine("StreamReader closed.");
             return dc;
         }
 
         public void AddRecord(string id, float value)
         {
+            Console.WriteLine("Entering AddRecord.");
             StreamWriter fout = new StreamWriter(filename, true);
+            Console.WriteLine("StreamWriter created.");
             fout.WriteLine("{0},{1},{2}",id, value, DateTime.Now.ToString());
+            Console.WriteLine("File appended. Closing now...");
             fout.Close();
             Console.WriteLine("Record added: {0},{1},{2}", id, value, DateTime.Now.ToString());
         }

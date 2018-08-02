@@ -6,7 +6,8 @@
     <h1>View Data</h1>
     <p>This page allows you to view all the stored data.</p>
     <asp:Button ID="RefreshDataButton" runat="server" Text="Refresh" />
-    <asp:Table ID="DataTable" runat="server">
+    <br />
+    <asp:Table ID="DataTable" runat="server" BorderStyle="Solid" CellPadding="5" CellSpacing="5" GridLines="Both">
     </asp:Table>
 
 </asp:Content>
