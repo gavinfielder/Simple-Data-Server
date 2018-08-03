@@ -5,7 +5,9 @@ This web app handles a persistent data source which stores an ID, a floating-poi
 I am building this as an educational tool. My learning goals for this project are:
  - ASP.Net
  - WCF
- - SQL Server (coming soon)
+ - SQL Server
+ - Oracle (coming soon)
+ - Real time data views (coming soon)
  - Deployment on AWS using EC2, Elastic Beanstalk, and AWS toolkit for Visual Studio
 
 ## Design

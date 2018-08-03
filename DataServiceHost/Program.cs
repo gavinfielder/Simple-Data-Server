@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DataService;
+using DataService.SQLServer;
 using System.ServiceModel;
 using System.ServiceModel.Description;
 
@@ -18,21 +14,12 @@ namespace DataServiceHost
 
             //Step 2 create a serviceHost instance
             //ServiceHost selfHost = new ServiceHost(new CalculatorService(), baseAddress);
-            ServiceHost selfHost = new ServiceHost(typeof(TextDataService), baseAddress);
+            ServiceHost selfHost = new ServiceHost(typeof(SQLServerService), baseAddress);
 
             try
             {
-                /* //Using .Net 4.5, so we shouldn't need this
+                //Using .Net 4.5, so we shouldn't need this
                 //Step 3 Add a service endpoint
-                selfHost.AddServiceEndpoint(
-                    GetType(ICalculator),
-                    new WSHttpBinding(),
-                    "CalculatorService");
-                    */
-                /*
-            selfHost.AddServiceEndpoint("ICalculator",
-                new WSHttpBinding(),
-                "CalculatorService");*/
 
                 //Step 4 Enable metadata exchange
                 ServiceMetadataBehavior smb = new ServiceMetadataBehavior();
