@@ -8,7 +8,7 @@ namespace testDeploy.Controllers
 {
     public interface ILogManager
     {
-        void Log(string message);
+        void Write(string message);
         string ReadAll();
     }
 
@@ -21,13 +21,11 @@ namespace testDeploy.Controllers
         //Constructor. Accepts relative file path of log in project
         public TextLogManager(string logFilePath)
         {
-            //string dir = Directory.GetCurrentDirectory();
-            //_logFilePath = dir + logFilePath;
             _logFilePath = logFilePath;
         }
 
         //Writes a message to the log
-        public void Log(string message)
+        public void Write(string message)
         {
             StreamWriter fout = new StreamWriter(_logFilePath, true);
             string record = DateTime.Now.ToString() + "   " + message + "\r\n";

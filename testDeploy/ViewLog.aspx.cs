@@ -12,7 +12,7 @@ namespace testDeploy
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            LogDisplay.Text = MainController.ReadLogFile();
+            LogDisplay.Text = MainController.Log.ReadAll();
         }
     }
 }

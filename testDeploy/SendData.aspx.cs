@@ -10,11 +10,6 @@ namespace testDeploy
 {
     public partial class SendData : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-
         //Preprocess a send data request and pass request to controller
         protected void SendButtonClick(object sender, EventArgs e)
         {
@@ -26,12 +21,8 @@ namespace testDeploy
                 DisplayStatus("Data not sent: Value is not a valid float.");
                 return;
             }
-            success = MainController.SendData(id, value);
-            if (success)
-                DisplayStatus("Data sent successfully.");
-            else
-                DisplayStatus("Data sending was unsuccessful.");
-            
+            MainController.SendData(id, value);
+            DisplayStatus("Data sent successfully.");
         }
 
         //Displays a message

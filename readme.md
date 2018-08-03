@@ -8,9 +8,14 @@ I am building this as an educational tool. My learning goals for this project ar
  - SQL Server (coming soon)
  - Deployment on AWS using EC2, Elastic Beanstalk, and AWS toolkit for Visual Studio
 
+## Design
+I used a non-scaffolded MVC. The website and WCF service are separate deployments on the same server using an Amazon EC2 windows instance. The SQL Server instance is hosted on a separate server using Amazon RDS, as will the Oracle when it's deployed.
+
+~[Design diagram](https://i.imgur.com/QHEfSOq.png)
+
 
 ## Current Deployment
 It is currently deployed on AWS. The latest deployment can be seen [here](http://rgftestdeploy.us-east-2.elasticbeanstalk.com/). 
 
 
-Last updated 8/2/2018
+Last updated 8/3/2018

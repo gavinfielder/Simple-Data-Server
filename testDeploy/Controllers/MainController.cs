@@ -1,6 +1,4 @@
 ﻿using System.Collections.Generic;
-using testDeploy.Models;
-//using testDeploy.DataDefinitions;
 using testDeploy.ServiceReference1;
 
 namespace testDeploy.Controllers
@@ -8,34 +6,33 @@ namespace testDeploy.Controllers
     public class MainController
     {
         //Fields
-        private static testDeploy.Models.IDataService data = new TextDataService();
+        private static DataServiceClient dataClient = new DataServiceClient();
         private static ILogManager logManager = new TextLogManager("C:\\inetpub\\wwwroot\\App_Data\\log.txt");
 
-        //Uses the data service object to record the requested data
-        public static bool SendData(string id, float value)
+        //Provides public access to the log system
+        public static ILogManager Log
         {
-            Log("Inserting new record.");
-            bool success = data.Insert(id, value);
-            return success;
+            get
+            {
+                return logManager;
+            }
+        }
+
+        //Uses the data service object to record the requested data
+        public static void SendData(string id, float value)
+        {
+            Log.Write("Inserting new record.");
+            dataClient.AddRecord(id, value);
         }
 
         //Uses the data service object to retrieve all data
         public static List<Record> RetrieveAllRecords()
         {
-            Log("Retrieving records.");
-            return data.RetrieveAll();
+            Log.Write("Retrieving records.");
+            RecordsDataContract dc = dataClient.GetRecords();
+            List<Record> records = new List<Record>(dc.Records);
+            return records;
         }
         
-        //Writes a message to the log file
-        public static void Log(string message)
-        {
-            logManager.Log(message);
-        }
-
-        //Retrieves the contents of the log file
-        public static string ReadLogFile()
-        {
-            return logManager.ReadAll();
-        }
     }
 }
