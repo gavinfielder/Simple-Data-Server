@@ -11,7 +11,7 @@ I am building this as an educational tool. My learning goals for this project ar
 ## Design
 I used a non-scaffolded MVC. The website and WCF service are separate deployments on the same server using an Amazon EC2 windows instance. The SQL Server instance is hosted on a separate server using Amazon RDS, as will the Oracle when it's deployed.
 
-~[Design diagram](https://i.imgur.com/QHEfSOq.png)
+![Design diagram](https://i.imgur.com/QHEfSOq.png)
 
 
 ## Current Deployment
