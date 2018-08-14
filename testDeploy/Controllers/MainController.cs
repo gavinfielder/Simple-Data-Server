@@ -21,17 +21,23 @@ namespace testDeploy.Controllers
         //Uses the data service object to record the requested data
         public static void SendData(string id, float value)
         {
-            Log.Write("Inserting new record.");
-            dataClient.AddRecord(id, value);
+            //Disabling
+            //Log.Write("Inserting new record.");
+            //dataClient.AddRecord(id, value);
         }
 
         //Uses the data service object to retrieve all data
         public static List<Record> RetrieveAllRecords()
         {
+            /* Disabling
             Log.Write("Retrieving records.");
             RecordsDataContract dc = dataClient.GetRecords();
             List<Record> records = new List<Record>(dc.Records);
             return records;
+            */
+
+            //Disabled version
+            return new List<Record>();
         }
         
     }

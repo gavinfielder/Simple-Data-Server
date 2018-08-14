@@ -18,6 +18,7 @@ I used a non-scaffolded MVC. The website and WCF service are separate deployment
 
 ## Current Deployment
 It is currently deployed on AWS. The latest deployment can be seen [here](http://rgftestdeploy.us-east-2.elasticbeanstalk.com/). 
+UPDATE: The data service has been disconnected as of 8/14/2018. The front-end is still up, but it has no functionality.
 
 
-Last updated 8/3/2018
+Last updated 8/14/2018
